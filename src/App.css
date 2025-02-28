@@ -1,0 +1,234 @@
+/* Full-screen dark background */
+.homePageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #0d0d0d; /* Dark background */
+  }
+  
+  /* Centered form box */
+  .formWrapper {
+    display: flex;
+    flex-direction: column; /* Stack items */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    width: 420px;
+    padding: 20px;
+    background: #1c1e29; /* Darker box */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* Logo aligned at the top */
+  .rectangular-image {
+    border-radius: 5%;
+    width: 100%; /* Adjust size as needed */
+    height: 200px;
+    margin-bottom: 10px; /* Space below image */
+    align-self: flex-start; /* Align to top-left */
+  }
+  
+  /* Title styling */
+  .mainLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ddd;
+    align-self: flex-start; /* Align to the start */
+    margin-bottom: 10px; /* Space below */
+    margin-left: 10px;
+  }
+  
+  /* Input group */
+  .inputGroup {
+    display: flex;
+    flex-direction: column; /* Stack inputs */
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Space between inputs */
+  }
+  
+  /* Input fields */
+  .inputBox {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .inputBox::placeholder {
+    color: #888;
+  }
+  
+  /* Join button */
+  .btn {
+    width: 95%;
+    padding: 10px;
+    background: #00c853; /* Green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: #009624;
+   
+  }
+  
+  /* Info text */
+  .createInfo {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 10px;
+  }
+  
+  /* New room link */
+  .createNewBtn {
+    color: #00c853;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  footer a{
+    color: #00c853;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  .createNewBtn:hover  {
+    color:  #009624;
+    text-decoration: underline;
+  }
+  footer a:hover{
+    color: #009624 ;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #888;
+  }
+  
+  .mainWrapper {
+    display: grid;
+    grid-template-columns: 230px 1fr; /* Sidebar: Fixed, Editor: Remaining */
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .CodeMirror {
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 20px;
+    background: #282c34 !important;
+    color: #f8f8f2 !important;
+    line-height: 1.6;
+    padding-top: 20px;
+  }
+  .CodeMirror-scroll {
+    height: 100% !important;
+  }
+  
+  .editorWrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Take full remaining space */
+    height: 100vh; /* Full height */
+    background: #282c34; /* Dark Dracula theme */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .aside {
+    width: 225px; 
+    background: #1c1e29;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  .logoImage {
+    border-radius: 5%;
+    width: 100%; /* Adjust size as needed */
+    height: 150px;
+    margin-bottom: 10px;
+    
+    /* Space below image */
+    /* Align to top-left */
+  }
+  
+  .asideInner{
+    flex:1
+  }
+  
+  .clientsList{
+  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px
+  }
+  
+  .client{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .userName{
+    margin-top: 10px;
+  }
+  
+  .logo{
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    
+  }
+  
+  .leaveBtn{
+    margin-top: 20px;
+    
+  }
+  
+  .copyBtn, .leaveBtn {
+    width: 100%; /* Ensures the button fits inside the sidebar */
+    max-width: 200px; /* Prevents it from being too wide */
+    padding: 10px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensures padding doesn't increase width */
+    text-align: center; /* Ensures text stays centered */
+  }
+  
+  .leaveBtn{
+    background-color:#009624;
+  }
+  .leaveBtn:hover{
+    
+    background:red;
+  
+  }
+  
+  
+  
+  
+  
